@@ -6,5 +6,5 @@ function trocarPagina(pagina) {
 }
 
 function entrarDiscord() {
-    window.location.href = "https://discord.gg/seulink";
+    window.location.href = "https://discord.gg/Pb8x2FqZm";
 }
