@@ -1,0 +1,139 @@
+/* GERAL */
+.corpo {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(205, 205, 205);
+}
+
+/* TOPO */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+/* LOGO */
+.imagem {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 90px;
+}
+
+/* TÍTULO + NEON */
+.cabecalho {
+    color: rgb(129, 11, 255);
+    margin: 0;
+    animation: neon 1.5s infinite alternate;
+}
+
+/* ANIMAÇÃO NEON */
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px rgb(129, 11, 255),
+                     0 0 10px rgb(129, 11, 255),
+                     0 0 20px rgb(129, 11, 255);
+    }
+    50% {
+        text-shadow: 0 0 10px rgb(180, 100, 255),
+                     0 0 20px rgb(180, 100, 255),
+                     0 0 40px rgb(180, 100, 255);
+    }
+    100% {
+        text-shadow: 0 0 5px rgb(129, 11, 255),
+                     0 0 10px rgb(129, 11, 255),
+                     0 0 20px rgb(129, 11, 255);
+    }
+}
+
+/* MENU */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* BARRA */
+.barra {
+    display: inline-flex;
+    gap: 10px;
+    padding: 5px 15px;
+    background: rgb(129, 11, 255);
+    border-radius: 10px;
+}
+
+/* BOTÕES */
+.botao {
+    background: rgb(205, 205, 205);
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.botao:hover {
+    background-color: rgb(96, 9, 188);
+    color: white;
+    transform: scale(1.05);
+}
+
+.botao:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* CONTAINER DO LOGIN */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+/* FORMULÁRIO */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    background: #4a4a4a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+
+    box-shadow: 0 0 15px rgba(129, 11, 255, 0.6);
+}
+
+/* INPUTS */
+.form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* BOTÃO LOGIN */
+.btn-login {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(129, 11, 255);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-login:hover {
+    background: rgb(96, 9, 188);
+    transform: scale(1.05);
+}
+
+.btn-login:active {
+    transform: scale(0.95);
+}
