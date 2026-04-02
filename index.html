@@ -9,31 +9,63 @@
 
 <body class="corpo">
 
+    <!-- TOPO -->
     <header class="header">
-        <img class="imagem" src="./assets/nexus.png" alt="">
+        <a href="#" onclick="trocarPagina('inicio')">
+            <img class="imagem" src="./assets/nexus.png" alt="">
+        </a>
         <h1 class="cabecalho">Nexus Universe</h1>
     </header>
 
     <!-- MENU -->
     <div class="menu-container">
         <div class="barra">
-            <button class="botao">Início</button>
-            <button class="botao">Sobre</button>
-            <button class="botao">Serviços</button>
-            <button class="botao">Contato</button>
+            <button class="botao" onclick="trocarPagina('inicio')">Início</button>
+            <button class="botao" onclick="trocarPagina('sobre')">Sobre</button>
+            <button class="botao" onclick="trocarPagina('servicos')">Serviços</button>
+            <button class="botao" onclick="trocarPagina('contato')">Contato</button>
         </div>
     </div>
 
-    <!-- LOGIN CENTRALIZADO -->
-    <div class="container-login">
-        <form class="form">
-            <h2>Acessar conta do Discord</h2>
+    <!-- PÁGINA INÍCIO -->
+    <div id="inicio" class="pagina">
 
-            <input type="text" placeholder="Digite seu usuário">
-            <input type="password" placeholder="Digite sua senha">
+        <h2>Bem-vindo ao Nexus Universe</h2>
+        <p>Entre e faça parte da nossa comunidade!</p>
 
-            <button class="btn-login">Acessar</button>
-        </form>
+        <!-- LOGIN -->
+        <div class="container-login">
+            <form class="form">
+                <h2>Acessar conta do Discord</h2>
+
+                <input type="text" placeholder="Digite seu usuário">
+                <input type="password" placeholder="Digite sua senha">
+
+                <button class="btn-login" type="button" onclick="login()">Acessar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- SOBRE -->
+    <div id="sobre" class="pagina" style="display:none;">
+        <h2>Sobre</h2>
+        <p>O Nexus Universe é um servidor focado em diversão, eventos e comunidade.</p>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <div id="servicos" class="pagina" style="display:none;">
+        <h2>Serviços</h2>
+        <p>🎮 Servidor de jogos</p>
+        <p>💬 Comunidade ativa</p>
+        <p>🏆 Eventos semanais</p>
+    </div>
+
+    <!-- CONTATO -->
+    <div id="contato" class="pagina" style="display:none;">
+        <h2>Contato</h2>
+        <p>Entre no nosso Discord:</p>
+        <p>https://discord.gg/Pb8x2FqZm</p>
     </div>
 
 </body>
